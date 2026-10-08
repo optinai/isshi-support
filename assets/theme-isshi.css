@@ -135,3 +135,8 @@ footer{border-top-color:rgba(169,171,207,.18)}
    lp.css の object-position:38% 26% は縦長写真向け。
    今回の写真は顔が中央やや上にあるため、中央寄りに補正する。 */
 .hero-person img{object-position:50% 30%}
+
+/* 表示速度の改善（2026-10-08）: 本文ゴシックのWebフォント読み込みを廃止。
+   Hiragino Sans（iOS/Mac標準）で視覚的な差はほぼ無く、約1MB削減できる。
+   見出しの明朝（Shippori Mincho B1）は世界観の核なので維持する。 */
+:root{--sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium","Yu Gothic",system-ui,sans-serif}
